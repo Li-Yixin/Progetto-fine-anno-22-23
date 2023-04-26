@@ -16,14 +16,14 @@ mycursor.execute("CREATE DATABASE IF NOT EXISTS SOLAR_SYSTEM")
 #Create the table for the csv data (if not exists)
 mycursor.execute("""
   CREATE TABLE IF NOT EXISTS SOLAR_SYSTEM.System_Planet (
-    Planet VARCHAR(30) NOT NULL,    #Color,Mass,Diameter,Density,Surface Gravity
+    Planet VARCHAR(30) NOT NULL, 
     Color VARCHAR(100),
     Mass FLOAT,
     Diameter FLOAT,
     Density FLOAT,
     Surface Gravity FLOAT,
-    Escape Velocity FLOAT,
-    Rotation Period FLOAT,
+    Escape Velocity INT,
+    Rotation Period INT,
     Length of Day FLOAT,
     Distance from Sun FLOAT,
     Perihelion FLOAT,
