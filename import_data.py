@@ -15,52 +15,41 @@ mycursor.execute("CREATE DATABASE IF NOT EXISTS SOLAR_SYSTEM")
 
 #Create the table for the csv data (if not exists)
 mycursor.execute("""
-  CREATE TABLE IF NOT EXISTS SOLAR_SYSTEM.System_Planet (
+  CREATE TABLE IF NOT EXISTS SOLAR_SYSTEM.System_Element (
     Planet VARCHAR(30) NOT NULL, 
     Color VARCHAR(100),
-    Mass FLOAT,
-    Diameter FLOAT,
-    Density FLOAT,
-    Surface Gravity FLOAT,
-    Escape Velocity INT,
-    Rotation Period INT,
-    Length of Day FLOAT,
-    Distance from Sun FLOAT,
-    Perihelion FLOAT,
-    Aphelion FLOAT,
-    Orbital Period FLOAT,
-    Orbital Velocity FLOAT,
-    Orbital Inclination FLOAT,
-    Orbital Eccentricity FLOAT,
-    Obliquity to Orbit FLOAT,
-    Mean Temperature FLOAT,
-    Surface Pressure FLOAT,
-    Number of Moons FLOAT,
+    Mass INT,
+    Diameter INT,
+    Density INT,
+    Surface_Gravity INT,
+    Escape_Velocity INT,
     PRIMARY KEY (Planet)
   );""")
 
 #Delete data from the table Clsh_Unit
-mycursor.execute("DELETE FROM SOLAR_SYSTEM.System_Planet")
+mycursor.execute("DELETE FROM SOLAR_SYSTEM.System_Element")
 mydb.commit()
 
 #Read data from a csv file
-clash_data = pd.read_csv('./planets.csv', index_col=False, delimiter = ',')
-clash_data = clash_data.fillna('Null')
-print(clash_data.head(20))
+system_data = pd.read_csv('./planets.csv', index_col=False, delimiter = ',')
+system_data = system_data.fillna('Null')
+print(system_data.head(20))
 
 #Fill the table
-for i,row in clash_data.iterrows():
+for i,row in system_data.iterrows():
     cursor = mydb.cursor()
     #here %S means string values 
-    sql = "INSERT INTO SOLAR_SYSTEM.System_Planet VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+    sql = "INSERT INTO SOLAR_SYSTEM.System_Element VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
     cursor.execute(sql, tuple(row))
     print("Record inserted")
     # the connection is not auto committed by default, so we must commit to save our changes
     mydb.commit()
 
 #Check if the table has been filled
-mycursor.execute("SELECT * FROM CLASH_ROYALE.Clash_Unit")
+mycursor.execute("SELECT * FROM SOLAR_SYSTEM.System_Element")
 myresult = mycursor.fetchall()
 
 for x in myresult:
   print(x)
+
+
