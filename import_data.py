@@ -26,20 +26,21 @@ mycursor.execute("""
     PRIMARY KEY (Planet)
   );""")
 
-#Delete data from the table Clsh_Unit
+
+#Delete data from the table System_Element
 mycursor.execute("DELETE FROM SOLAR_SYSTEM.System_Element")
 mydb.commit()
 
 #Read data from a csv file
-system_data = pd.read_csv('./planets.csv', index_col=False, delimiter = ',')
-system_data = system_data.fillna('Null')
-print(system_data.head(20))
+system_date = pd.read_csv('./planets.csv', index_col=False, delimiter = ',')
+system_date = system_date.fillna('Null')
+print(system_date.head(20))
 
 #Fill the table
-for i,row in system_data.iterrows():
+for i,row in system_date.iterrows():
     cursor = mydb.cursor()
     #here %S means string values 
-    sql = "INSERT INTO SOLAR_SYSTEM.System_Element VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+    sql = "INSERT INTO SOLAR_SYSTEM.System_Element VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
     cursor.execute(sql, tuple(row))
     print("Record inserted")
     # the connection is not auto committed by default, so we must commit to save our changes
@@ -51,5 +52,3 @@ myresult = mycursor.fetchall()
 
 for x in myresult:
   print(x)
-
-

@@ -1,12 +1,21 @@
 from flask import render_template
 from flask import Flask
+import mysql.connector
 
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="",
+  database="SOLAR_SYSTEM"
+)
+mycursor = mydb.cursor()
 
 app = Flask(__name__)
 
 
+
 @app.route('/units')
 def unitList():
-    mycursor.execute("SELECT * FROM plane")
-    
-    return render_template('hello.html', name='Fabio')
+    mycursor.execute("SELECT * FROM System_Element")
+    myresult = mycursor.fetchall()
+    return render_template('System_Element.html', units=myresult)
