@@ -16,13 +16,13 @@ mycursor.execute("CREATE DATABASE IF NOT EXISTS SOLAR_SYSTEM")
 #Create the table for the csv data (if not exists)
 mycursor.execute("""
   CREATE TABLE IF NOT EXISTS SOLAR_SYSTEM.System_Element (
-    Planet VARCHAR(30) NOT NULL, 
+    Planet VARCHAR(50) NOT NULL, 
     Color VARCHAR(100),
-    Mass INT,
-    Diameter INT,
-    Density INT,
-    Surface_Gravity INT,
-    Escape_Velocity INT,
+    Mass INTEGER,
+    Diameter INTEGER,
+    Density INTEGER,
+    Surface_Gravity INTEGER,
+    Escape_Velocity INTEGER,
     PRIMARY KEY (Planet)
   );""")
 
@@ -40,7 +40,7 @@ print(system_date.head(20))
 for i,row in system_date.iterrows():
     cursor = mydb.cursor()
     #here %S means string values 
-    sql = "INSERT INTO SOLAR_SYSTEM.System_Element VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+    sql = "INSERT INTO SOLAR_SYSTEM.System_Element VALUES (%s,%s,%s,%s,%s,%s,%s)"
     cursor.execute(sql, tuple(row))
     print("Record inserted")
     # the connection is not auto committed by default, so we must commit to save our changes

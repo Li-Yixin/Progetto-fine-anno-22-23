@@ -14,8 +14,11 @@ app = Flask(__name__)
 
 
 
-@app.route('/units')
-def unitList():
+@app.route('/')
+def hello():
+    return render_template('hello.html')
+
+@app.route('/s')
     mycursor.execute("SELECT * FROM System_Element")
     myresult = mycursor.fetchall()
     return render_template('System_Element.html', units=myresult)
