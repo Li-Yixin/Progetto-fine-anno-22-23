@@ -18,7 +18,7 @@ app = Flask(__name__)
 def hello():
     return render_template('hello.html')
 
-@app.route('/s')
+@app.route('/S')
 def sito():
     mycursor.execute("SELECT * FROM System_Element")
     myresult = mycursor.fetchall()
