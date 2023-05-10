@@ -2,16 +2,29 @@
 <html lang="en">
 
 <head>
-<title>Solar system nel file element</title>
+<title>Solar system </title>
 </head>
 
 <body>
     <h1>Sistema solare</h1>
     {% for item in units %}
-    
-        <p>Nomi pianeti: {{ item[0] }}</p>
-    { % endfor % }
         
+        <p>Nomi : {{ item[0] }}</p>
+        <p>Colore : {{ item[1] }}</p>
+        <p>Massa : {{ item[2] }}</p>
+        <p>Diametro : {{ item[3] }}</p>
+        <p>Densità : {{ item[4] }}</p>
+        <p>Gravità superficiale : {{ item[5] }}</p>
+        <p>Velocità di fuga : {{ item[6] }}</p>
+        <img src="../static/immagini/{{item[0]}}.jpg" alt="{{item[0]}}" width="400" >
+        
+        
+    
+    {% endfor %}
+   
+
+
+   
 </body>
 
 </html>
