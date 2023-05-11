@@ -16,6 +16,7 @@ mycursor.execute("CREATE DATABASE IF NOT EXISTS SOLAR_SYSTEM")
 #Create the table for the csv data (if not exists)
 mycursor.execute("""
   CREATE TABLE IF NOT EXISTS SOLAR_SYSTEM.System_Element (
+    id INTEGER(50) NOT NULL,
     Planet VARCHAR(50) NOT NULL, 
     Color VARCHAR(100),
     Mass INTEGER,
