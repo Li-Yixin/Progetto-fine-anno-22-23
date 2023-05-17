@@ -24,7 +24,7 @@ mycursor.execute("""
     Density INTEGER,
     Surface_Gravity INTEGER,
     Escape_Velocity INTEGER,
-    PRIMARY KEY (Planet)
+    PRIMARY KEY (id)
   );""")
 
 
@@ -41,7 +41,7 @@ print(system_date.head(20))
 for i,row in system_date.iterrows():
     cursor = mydb.cursor()
     #here %S means string values 
-    sql = "INSERT INTO SOLAR_SYSTEM.System_Element VALUES (%s,%s,%s,%s,%s,%s,%s)"
+    sql = "INSERT INTO SOLAR_SYSTEM.System_Element VALUES (%s,%s,%s,%s,%s,%s,%s,%s)"
     cursor.execute(sql, tuple(row))
     print("Record inserted")
     # the connection is not auto committed by default, so we must commit to save our changes

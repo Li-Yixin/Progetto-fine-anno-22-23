@@ -2,24 +2,36 @@
 <html lang="en">
 
 <head>
-<title>Solar system </title>
+<title class="solid">Solar system </title>
+<link rel="stylesheet" href="../static/css/System_Element.css" />
+
 </head>
 
 <body>
+    <div>
     <h1>Sistema solare</h1>
     {% for item in units %}
-        
-        <p>Nomi : {{ item[0] }}</p>
-        <p>Colore : {{ item[1] }}</p>
-        <p>Massa : {{ item[2] }}</p>
-        <p>Diametro : {{ item[3] }}</p>
-        <p>Densità : {{ item[4] }}</p>
-        <p>Gravità superficiale : {{ item[5] }}</p>
-        <p>Velocità di fuga : {{ item[6] }}</p>
-        <img src="../static/immagini/{{item[0]}}.jpg" alt="{{item[0]}}" width="400" >
-        
-        
     
+        <p>id : {{ item[0] }}</p>
+        <p>Nomi : {{ item[1] }}</p>
+        <p>Colore : {{ item[2] }}</p>
+        <p>Massa : {{ item[3] }}</p>
+        <p>Diametro : {{ item[4] }}</p>
+        <p>Densità : {{ item[5] }}</p>
+        <p>Gravità superficiale : {{ item[6] }}</p>
+        <p>Velocità di fuga : {{ item[7] }}</p>
+        <img src="../static/immagini/{{item[1]}}.jpg" alt="{{item[1]}}" width="400" >
+        
+    </div>    
+    
+
+    <h2>
+
+    </h2>
+
+  
+
+
     {% endfor %}
    
 

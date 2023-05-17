@@ -15,11 +15,17 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello():
+def home_page():
     return render_template('hello.html')
 
 @app.route('/S')
-def sito():
+def nomi():
     mycursor.execute("SELECT * FROM System_Element")
     myresult = mycursor.fetchall()
+    return render_template('System_Element.html', units=myresult)
+
+
+@app.route('/D')
+def descrizine():
+    
     return render_template('System_Element.html', units=myresult)
