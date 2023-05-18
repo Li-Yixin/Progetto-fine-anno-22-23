@@ -14,7 +14,7 @@ app = Flask(__name__)
 
 
 
-@app.route('/')
+@app.route('/H')
 def home_page():
     return render_template('hello.html')
 
@@ -28,4 +28,4 @@ def nomi():
 @app.route('/D')
 def descrizine():
     
-    return render_template('System_Element.html', units=myresult)
+    return render_template('Descrizione.html')

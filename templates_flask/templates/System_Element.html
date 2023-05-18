@@ -11,7 +11,7 @@
     <div>
     <h1>Sistema solare</h1>
     {% for item in units %}
-    
+        <div class="flexbox">
         <p>id : {{ item[0] }}</p>
         <p>Nomi : {{ item[1] }}</p>
         <p>Colore : {{ item[2] }}</p>
@@ -21,7 +21,9 @@
         <p>Gravità superficiale : {{ item[6] }}</p>
         <p>Velocità di fuga : {{ item[7] }}</p>
         <img src="../static/immagini/{{item[1]}}.jpg" alt="{{item[1]}}" width="400" >
-        
+        </div>
+    {% endfor %}  
+
     </div>    
     
 
@@ -32,7 +34,7 @@
   
 
 
-    {% endfor %}
+    
    
 
 
