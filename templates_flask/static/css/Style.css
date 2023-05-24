@@ -1,0 +1,57 @@
+head {
+    text-align: center;
+    color: #26d334;
+    }
+    
+    
+.titolo_h1{
+     color: #992ccc; 
+    }
+    
+
+h1 {
+  color: aliceblue;
+  }
+
+body{
+  background-color: #000000;
+  }
+
+
+
+
+p {
+    color: #c140c5;
+    }
+
+
+.Welcome{
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  }
+
+
+.topbar
+  {
+  background-color: #ffffff;
+  color: #000000;
+  }
+
+
+
+.solid {
+    border-style: solid;
+    border-color: rgb(196, 196, 32);
+        }
+
+.flexbox {
+  display: flex;
+  background-color: rgb(107, 77, 77);
+
+}
+
+
+
+
+

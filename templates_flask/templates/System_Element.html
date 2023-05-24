@@ -2,15 +2,26 @@
 <html lang="en">
 
 <head>
-<title class="solid">Solar system </title>
-<link rel="stylesheet" href="../static/css/System_Element.css" />
-<h1>Sistema solare</h1>
+<title>Solar system </title>
+
+<link rel="stylesheet" href="../static/css/Style.css" />
+
+<h1 class="titolo_h1">Solar Systeme</h1>
+
+<div class="topbar">
+    <a href="https://5000-liyixin-progettofineann-k4mt0zqa5pe.ws-eu97.gitpod.io/">Home</a>
+    <a href="https://5000-liyixin-progettofineann-k4mt0zqa5pe.ws-eu97.gitpod.io/S">Descrizione</a>
+    <a href="https://5000-liyixin-progettofineann-k4mt0zqa5pe.ws-eu97.gitpod.io/D">Galleria</a>
+</div>
 </head>
+
+
+
+
 
 <body>
     <div class="flexbox">
     {% for item in units %}
-        <div class="flexbox">
         <p>id : {{ item[0] }}</p>
         <p>Nomi : {{ item[1] }}</p>
         <p>Colore : {{ item[2] }}</p>
@@ -22,13 +33,9 @@
         <img src="../static/immagini/{{item[1]}}.jpg" alt="{{item[1]}}" width="400" >
         </div>
     {% endfor %}  
-
     </div>    
     
 
-    <h2>
-
-    </h2>
 
   
 
