@@ -3,18 +3,17 @@ head {
     color: #26d334;
     }
     
-    
-.titolo_h1{
-     color: #992ccc; 
-    }
-    
 
 h1 {
   color: aliceblue;
+  font-size: 70px;
+  text-align: center;
+  
   }
 
 body{
   background-color: #000000;
+  padding: 5px;
   }
 
 
@@ -24,20 +23,44 @@ p {
     color: #c140c5;
     }
 
+img {
+      max-width: 100%;
+      max-height: 100%;
+  }
 
 .Welcome{
-  width: 500px;
-  height: 500px;
-  justify-content: center;
+  width: 3000px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   }
+
+
+
+
 
 
 .topbar
   {
   background-color: #ffffff;
+  font-size: 30px;
   color: #000000;
   }
 
+.topbar a
+  {
+  color: #000000;
+  text-decoration: none;
+  }
+
+
+li{
+  display: inline;
+  margin: 10px;
+  color: #ffffff;
+  font-size: 30px;
+  }
 
 
 .solid {
