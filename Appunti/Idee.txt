@@ -9,3 +9,14 @@ Ordinare i nomi
 
 Idee
 
+
+
+
+
+
+
+
+
+Comandi 
+pip install -U flask
+pip install pandas

@@ -16,16 +16,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-    return render_template('hello.html')
-
-@app.route('/S')
-def nomi():
-    mycursor.execute("SELECT * FROM System_Element")
-    myresult = mycursor.fetchall()
-    return render_template('System_Element.html', units=myresult)
-
+    return render_template('Home.html')
 
 @app.route('/D')
-def descrizine():
-    
-    return render_template('Descrizione.html')
+def dati():
+    mycursor.execute("SELECT * FROM System_Element")
+    myresult = mycursor.fetchall()
+    return render_template('Dati.html', units=myresult)
+
+@app.route('/M')
+def moto():
+    return render_template('Moto.html')
+
+@app.route('/G')
+def galleria():
+    return render_template('Galleria.html')
