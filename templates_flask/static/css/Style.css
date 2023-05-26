@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+
 head {
     text-align: center;
-    color: #26d334;
+    color: rgb(0, 0, 0);
     }
     
 
@@ -16,9 +19,6 @@ body{
   padding: 5px;
   }
 
-
-
-
 p {
     color: #c140c5;
     }
@@ -27,6 +27,19 @@ img {
       max-width: 100%;
       max-height: 100%;
   }
+
+
+li {
+  display: inline;
+  margin: 10px;
+  color: #ffffff;
+  font-size: 30px;
+  }
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
 
 .Welcome{
   width: 3000px;
@@ -39,40 +52,29 @@ img {
 
 
 
-
+li,a {
+  color: black;
+}
 
 .topbar
   {
-  background-color: #ffffff;
+  background-color:rgb(255, 255, 255) ;
   font-size: 30px;
-  color: #000000;
+  color: black;
   }
 
-.topbar a
-  {
-  color: #000000;
+.topbar li a {
   text-decoration: none;
+  transition: all 0.5s ease 0s;
   }
 
-
-li{
-  display: inline;
-  margin: 10px;
-  color: #ffffff;
-  font-size: 30px;
+.topbar li a:hover {
+  color: #D72222;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+  transition-delay: 0ms;
   }
 
-
-.solid {
-    border-style: solid;
-    border-color: rgb(196, 196, 32);
-        }
-
-.flexbox {
-  display: flex;
-  background-color: rgb(107, 77, 77);
-
-}
 
 
 
