@@ -41,13 +41,7 @@ a {
   text-decoration: none;
 }
 
-.Welcome{
-  width: 3000px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
+
 
 
 
@@ -76,7 +70,19 @@ li,a {
   }
 
 
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
+.galleria {
+  width: 500px;
+  height: auto;
+}
 
-
+.center {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
