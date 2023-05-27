@@ -5,13 +5,6 @@ head {
     text-align: center;
     color: rgb(0, 0, 0);
     }
-    
-
-h1 {
-  color: aliceblue;
-  font-size: 70px;
-  cursor: pointer;
-  }
 
 body{
   background-color: #000000;
@@ -22,18 +15,7 @@ p {
     color: #c140c5;
     }
 
-img {
-      max-width: 100%;
-      max-height: 100%;
-  }
 
-
-li,a {
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  font-weight: 500;
-  text-decoration: none;
-}
 
 header{
   display: flex;
@@ -49,13 +31,13 @@ header{
   color: rgb(255, 255, 255);
   }
 
-.topbar li a {
+.nav_link li a:hover {
+    color: #D72222;
+    }
+
+.nav_link li a {
   display: inline-block;
   padding: 0px 20px;
-  }
-
-
-.topbar li a {
   text-decoration: none;
   transition: all 0.5s ease 0s;
   transition-delay: 0ms;
