@@ -20,3 +20,8 @@ Idee
 Comandi 
 pip install -U flask
 pip install pandas
+
+
+
+
+<img src="	<img src="g(1).jpg alt="Foto della NASA">
