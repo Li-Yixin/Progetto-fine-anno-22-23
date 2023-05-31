@@ -20,8 +20,12 @@ Idee
 Comandi 
 pip install -U flask
 pip install pandas
-
-
+python import_data.py
+cd templates_flask
 
 
 <img src="	<img src="g(1).jpg alt="Foto della NASA">
+
+
+
+navlinks = topbar
