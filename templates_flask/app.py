@@ -22,7 +22,7 @@ def home_page():
 def dati():
     mycursor.execute("SELECT * FROM System_Element")
     myresult = mycursor.fetchall()
-    return render_template('Dati.html', units=myresult)
+    return render_template('Descrizione.html', units=myresult)
 
 @app.route('/M')
 def moto():
