@@ -33,6 +33,7 @@ li,a,button {
   color: #ffffff;
   display: flex;
   font-size: 70px;
+  margin: 20px;
 }
 
 .button{
