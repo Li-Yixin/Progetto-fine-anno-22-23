@@ -1,7 +1,10 @@
 Problemi
-Immagine del home page al centro
 Cambiare font delle pagine
 Ordinare i nomi
+
+1.flexbox
+2.picture wall
+3.cookie bar 
 
 
 
@@ -29,3 +32,13 @@ cd templates_flask
 
 
 navlinks = topbar
+
+
+        <li><p>id : {{ item[0] }}</p></li>
+        <li><p>Nomi : {{ item[1] }}</p></li>
+        <li><p>Colore : {{ item[2] }}</p></li>
+        <li><p>Massa : {{ item[3] }}</p></li>
+        <li><p>Diametro : {{ item[4] }}</p></li>
+        <li><p>Densità : {{ item[5] }}</p></li>
+        <li><p>Gravità superficiale : {{ item[6] }}</p></li>
+        <li><p>Velocità di fuga : {{ item[7] }}</p></li>

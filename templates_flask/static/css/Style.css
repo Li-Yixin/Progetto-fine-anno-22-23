@@ -3,11 +3,11 @@
 
 head {
     text-align: center;
-    background-color: rgb(0, 0, 0);
+    background-color: #222222;
     }
 
 body{
-  background-color: #000000;
+  background-color: #222222;
   padding: 5px;
   }
 
@@ -95,4 +95,30 @@ li,a,button {
   justify-content: center;
   align-content: center;
   text-align: center;
+}
+
+
+
+
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-evenly;
+  background-color: #222222;
+}
+
+
+.flexbox div {
+  background-color: rgb(71, 76, 119);
+  border: 3px groove rgb(255, 255, 255);
+  border-radius: 5%;
+  margin: 20px;
+  padding: 3%;
+  width: 80%;
+}
+
+.flexbox img{
+  float: right;
 }

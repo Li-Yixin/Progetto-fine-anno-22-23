@@ -23,18 +23,34 @@
 
 
 <body>
+  <div> 
+    <p>Lista in base alla diatanza dal Sole</p>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </div>
+
+
     <div class="flexbox">
-    {% for item in units %}
-        <p>id : {{ item[0] }}</p>
-        <p>Nomi : {{ item[1] }}</p>
-        <p>Colore : {{ item[2] }}</p>
-        <p>Massa : {{ item[3] }}</p>
-        <p>Diametro : {{ item[4] }}</p>
-        <p>Densità : {{ item[5] }}</p>
-        <p>Gravità superficiale : {{ item[6] }}</p>
-        <p>Velocità di fuga : {{ item[7] }}</p>
-        <img src="../static/immagini/{{item[1]}}.jpg" alt="{{item[1]}}" width="400" >
-    {% endfor %}  
+      {% for item in units %}
+        <div>
+          <img src="../static/immagini/{{item[1]}}.jpg" alt="{{item[1]}}" width="500" >
+          <p>id : {{ item[0] }}</p><br>
+          <p>Nomi : {{ item[1] }}</p><br>
+          <p>Colore : {{ item[2] }}</p><br>
+          <p>Massa : {{ item[3] }}</p><br>
+          <p>Diametro : {{ item[4] }}</p><br>
+          <p>Densità : {{ item[5] }}</p><br>
+          <p>Gravità superficiale : {{ item[6] }}</p><br>
+          <p>Velocità di fuga : {{ item[7] }}</p><br>
+        </div>
+      {% endfor %}  
     </div>    
     
 
