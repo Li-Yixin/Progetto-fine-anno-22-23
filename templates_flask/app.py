@@ -31,3 +31,7 @@ def moto():
 @app.route('/G')
 def galleria():
     return render_template('Galleria.html')
+
+@app.route('/C')
+def contatti():
+    return render_template('Contatti.html')
