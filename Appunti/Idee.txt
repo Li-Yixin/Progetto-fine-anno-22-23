@@ -2,8 +2,8 @@ Problemi
 Cambiare font delle pagine
 Ordinare i nomi
 
-1.flexbox
-2.picture wall
+1.flexbox -done
+2.picture wall -done
 3.cookie bar 
 
 

@@ -18,3 +18,82 @@
     </div>
   </div>
 </head>
+
+<style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+  * {
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #222222;
+    padding: 20px;
+    color: white;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  p{
+    margin-left: 12px;
+  }
+
+
+</style>
+
+
+<body>
+  <P>
+    Questo sito è un progetto scolastico. La scuola di riferimento è IIS Galvani <a href="https://www.iisgalvanimi.edu.it/">Link della scuola</a><br>
+    <br>
+    Se riscontrate dei problemi potete usare il modula sottostante.
+  </P>
+  <div class="container">
+    <form action="/action_page.php">
+      <label for="fname">Cognome</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Nome</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+
+      
+      <label for="country">Paese</label>
+      <input type="text" id="country" name="country" placeholder="Your country..">
+
+  
+      <label for="subject">Oggetto</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Invio">
+    </form>
+  </div>
+  
+  </body>
