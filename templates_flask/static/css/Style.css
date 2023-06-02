@@ -106,7 +106,7 @@ li,a,button {
 
 
 .flexbox div {
-  background-color: black;
+  background-color: #222222;
   border: 3px groove rgb(255, 255, 255);
   border-radius: 5%;
   margin: 20px;
@@ -152,3 +152,8 @@ li,a,button {
 
 
 
+.moto {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
