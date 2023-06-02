@@ -106,19 +106,33 @@ li,a,button {
   flex-direction: column;
   justify-content: center;
   align-content: space-evenly;
+  gap: 10px;
   background-color: #222222;
 }
 
 
 .flexbox div {
-  background-color: rgb(71, 76, 119);
+  background-color: black;
   border: 3px groove rgb(255, 255, 255);
   border-radius: 5%;
   margin: 20px;
   padding: 3%;
   width: 80%;
+  align-items: center;
 }
 
 .flexbox img{
-  float: right;
+  float: left;
+  justify-content: center;
+  margin-left: 7%;
+  
 }
+
+.flexbox p{
+  padding-left: 50%;
+  text-align: center;
+  align-self: center;
+}
+
+
+
