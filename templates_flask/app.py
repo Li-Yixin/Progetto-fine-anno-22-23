@@ -35,3 +35,8 @@ def galleria():
 @app.route('/C')
 def contatti():
     return render_template('Contatti.html')
+
+
+@app.route('/action_page.php')
+def prank():
+    return render_template('Direz.html')
