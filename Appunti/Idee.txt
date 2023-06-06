@@ -1,7 +1,6 @@
 Problemi
 1.Cambiare font delle pagine
 2.pagina descrizione : testo non sta al centro
-3.pagina direz
 
 
 
@@ -13,8 +12,7 @@ Problemi
 1.flexbox -done
 2.picture wall -done
 3.cookie bar 
-
-
+pagina direz done
 
 
 
