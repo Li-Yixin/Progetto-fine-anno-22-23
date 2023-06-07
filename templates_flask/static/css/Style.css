@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 
 
+
 head {
     text-align: center;
     background-color: #222222;
@@ -105,25 +106,27 @@ li,a,button {
 }
 
 
-.flexbox div {
+.flexbox-div {
   background-color: #222222;
   border: 3px groove rgb(255, 255, 255);
   border-radius: 5%;
   margin: 20px;
   padding: 3%;
   width: 80%;
+  display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .flexbox img{
   float: left;
-  justify-content: center;
-  margin-left: 7%;
+  justify-content: space-evenly;
+  margin-left:2%;
   
 }
 
 .flexbox p{
-  padding-left: 50%;
+
   text-align: center;
   align-self: center;
 }
@@ -156,4 +159,9 @@ li,a,button {
   justify-content: center;
   align-content: center;
   text-align: center;
+}
+
+.center-align
+{
+  vertical-align:middle;
 }

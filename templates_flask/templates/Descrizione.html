@@ -2,12 +2,12 @@
 <html lang="en">
 <link rel="stylesheet" href="../static/css/Style.css" />
 
-<head >
+<head>
   <title>Lavoro A.S. 2022-23 : Home</title>
-    
+
   <div class="header">
     <div class="topbar">
-      <h1>Descrizione generale</h1> 
+      <h1>Descrizione generale</h1>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/D">Descrizione</a></li>
@@ -25,32 +25,33 @@
 <body>
   <div class="flexbox">
     {% for item in units %}
-    <div>
-      <img src="../static/immagini/{{item[1]}}.jpg" alt="{{item[1]}}" width="500" >
-      
-      <p>id : {{ item[0] }}</p>
-      <p>Nomi : {{ item[1] }}</p>
-      <p>Colore : {{ item[2] }}</p>
-      <p>Massa : {{ item[3] }}</p>
-      <p>Diametro : {{ item[4] }}</p>
-      <p>Densità : {{ item[5] }}</p>
-      <p>Gravità superficiale : {{ item[6] }}</p>
-      <p>Velocità di fuga : {{ item[7] }}</p>
-      
+    <div class="flexbox-div">
+      <img src="../static/immagini/{{item[1]}}.jpg" alt="{{item[1]}}" width="500">
+      <div class="center-align">
+        <p>id : {{ item[0] }}</p>
+        <p>Nomi : {{ item[1] }}</p>
+        <p>Colore : {{ item[2] }}</p>
+        <p>Massa : {{ item[3] }}</p>
+        <p>Diametro : {{ item[4] }}</p>
+        <p>Densità : {{ item[5] }}</p>
+        <p>Gravità superficiale : {{ item[6] }}</p>
+        <p>Velocità di fuga : {{ item[7] }}</p>
+      </div>
+
     </div>
-    {% endfor %}  
-  </div>    
-    
+    {% endfor %}
+  </div>
 
 
-  
 
 
-    
-   
 
 
-   
+
+
+
+
+
 </body>
 
 </html>
